@@ -24,11 +24,7 @@ CREATOR = config(
     "CREATOR",
     default=1242011540,
 )
-APP_ID = config(
-    "APP_ID",
-    cast=int
-    default="14928364"
-)
+APP_ID = 14928364
 API_HASH = config(
     "API_HASH",
     default="67f7b37aaa922e915f7fa7664b3b0fb9"
