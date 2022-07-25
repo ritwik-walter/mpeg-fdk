@@ -25,10 +25,7 @@ CREATOR = config(
     default=1242011540,
 )
 APP_ID = 14928364
-API_HASH = config(
-    "API_HASH",
-    default="67f7b37aaa922e915f7fa7664b3b0fb9"
-)
+API_HASH = config("API_HASH", default="67f7b37aaa922e915f7fa7664b3b0fb9")
 
 SUDO_USERS = config(
     "SUDO_USERS",
