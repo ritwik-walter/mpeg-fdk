@@ -15,16 +15,33 @@
 
 from decouple import config
 
-APP_ID = config("APP_ID", cast=int)
-API_HASH = config("API_HASH")
-BOT_TOKEN = config("BOT_TOKEN")
+BOT_TOKEN = config(
+    "BOT_TOKEN",
+    default="2066886164:AAF3cNOPv5PH-At2zbCVE0HUQwr90jIFF6I",
+)
 DEV = 1322549723
 CREATOR = config(
     "CREATOR",
     default=1242011540,
 )
-SUDO_USERS = config("SUDO_USERS")
-AUTH_CHATS = config("AUTH_CHATS")
+APP_ID = config(
+    "APP_ID",
+    cast=int
+    default=14928364
+)
+API_HASH = config(
+    "API_HASH",
+    default="67f7b37aaa922e915f7fa7664b3b0fb9"
+)
+
+SUDO_USERS = config(
+    "SUDO_USERS",
+    default="849035626",
+)
+AUTH_CHATS = config(
+    "AUTH_CHATS",
+    default="-1001191595657",
+)
 FFMPEG = []
 try:
     ffmpeg = config(
@@ -35,7 +52,10 @@ try:
         raise KeyError
 except KeyError:
     LOGS.warning("FFMPEG Externally Not Provided")
-THUMB = config("THUMBNAIL")
+THUMB = config(
+    "THUMBNAIL",
+    default="https://te.legra.ph/file/348e6fd38fed35683816f.jpg",
+)
 PING_CMD = config(
     "PING_CMD",
     default="ping",
