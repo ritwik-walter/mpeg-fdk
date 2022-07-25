@@ -27,7 +27,7 @@ CREATOR = config(
 APP_ID = config(
     "APP_ID",
     cast=int
-    default=14928364
+    default="14928364"
 )
 API_HASH = config(
     "API_HASH",
